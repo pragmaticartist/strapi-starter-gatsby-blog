@@ -9,8 +9,9 @@ const IndexPage = () => {
 
   return (
     <Layout seo={data.strapiHomepage.seo}>
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
+      <p>yolo</p>
+      <div className='uk-section'>
+        <div className='uk-container uk-container-large'>
           <h1>{data.strapiHomepage.hero.title}</h1>
           <ArticlesComponent articles={data.allStrapiArticle.edges} />
         </div>
