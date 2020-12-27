@@ -1,28 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import "../assets/css/main.css";
+import "../styles/index.css";
 
 const Container = styled.div`
   width: 50vw;
-  min-width: 500px;
-  max-width: 98vw;
+  min-width: 300px;
+  max-width: 1240px;
   margin: 0 auto;
   color: #111111;
 `;
 
-const BlogTitle = styled.h1`
+const BlogTitleSvg = styled.svg`
+  width: 100%;
   margin: 40px 0;
-  font-size: 1em;
+
+  font-family: ImmortalMemory;
 `;
 
-const FeedContainer = styled.div`
-  width: 44vw;
-  margin: 0 auto;
-`;
+const FeedContainer = styled.div``;
 
 const IndexPage = () => (
   <Container>
-    <BlogTitle style={{ textAlign: "center" }}>Pragmatic Artist</BlogTitle>
+    <BlogTitleSvg viewBox='0 0 73 20'>
+      <text x='1' y='13'>
+        Pragmatic Artist
+      </text>
+    </BlogTitleSvg>
     <FeedContainer>
       <p>First blog post on timeline</p>
     </FeedContainer>
