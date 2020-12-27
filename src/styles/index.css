@@ -128,3 +128,28 @@ table {
   src: local("ImmortalMemory"),
     url("./fonts/ImmortalMemory.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Lora";
+  src: local("Lora"), url("./fonts/Lora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local("LoraBold"), url("./fonts/Lora-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local("LoraItalic"), url("./fonts/Lora-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local("LoraBoldItalic"),
+    url("./fonts/Lora-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
