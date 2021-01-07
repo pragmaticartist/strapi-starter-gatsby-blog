@@ -3,9 +3,8 @@ import styled from "styled-components";
 import "../styles/index.css";
 
 const BlogContainer = styled.div`
-  width: 40vw;
-  min-width: 300px;
-  max-width: 1080px;
+  width: 720px;
+  max-width: 96vw;
   margin: 0 auto;
 
   font-family: Lora;
@@ -14,14 +13,13 @@ const BlogContainer = styled.div`
 
 const BlogTitleSvg = styled.svg`
   width: 100%;
-  margin: 40px 0 77px;
+  margin: 1em 0 3em;
 
   font-family: ImmortalMemory;
 `;
 
 const WritingsContainer = styled.div`
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
 `;
 
 const WritingTitle = styled.h1`
@@ -31,8 +29,8 @@ const WritingTitle = styled.h1`
 
 const IndexPage = () => (
   <BlogContainer>
-    <BlogTitleSvg viewBox='0 0 73 20'>
-      <text x='1' y='13'>
+    <BlogTitleSvg viewBox='0 0 90 24'>
+      <text x='1' y='16'>
         Pragmatic Artist
       </text>
     </BlogTitleSvg>

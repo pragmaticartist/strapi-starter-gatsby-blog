@@ -6,16 +6,12 @@ exports.createPages = async ({ graphql, actions }) => {
         articles: allStrapiArticle {
           edges {
             node {
-              strapiId
-              slug
             }
           }
         }
         categories: allStrapiCategory {
           edges {
             node {
-              strapiId
-              slug
             }
           }
         }
@@ -38,8 +34,8 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/article/${article.node.slug}`,
       component: ArticleTemplate,
       context: {
-        slug: article.node.slug,
-      },
+        slug: article.node.slug
+      }
     });
   });
 
@@ -50,8 +46,8 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/category/${category.node.slug}`,
       component: CategoryTemplate,
       context: {
-        slug: category.node.slug,
-      },
+        slug: category.node.slug
+      }
     });
   });
 };
@@ -71,13 +67,13 @@ module.exports.onCreateNode = async ({ node, actions, createNodeId }) => {
         contentDigest: crypto
           .createHash("md5")
           .update(node.content || " ")
-          .digest("hex"),
-      },
+          .digest("hex")
+      }
     };
     actions.createNode(newNode);
     actions.createParentChildLink({
       parent: node,
-      child: newNode,
+      child: newNode
     });
   }
 };
